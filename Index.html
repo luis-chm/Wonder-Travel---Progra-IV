@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Metadatos -->
+    <meta name="author" content="Luis Chaves Mora">
+    <meta name="description"
+        content="Wonder Travel - Agencia de viajes con tours personalizados y experiencias únicas.">
+    <meta name="keywords"
+        content="agencia de viajes, tours, playa, montaña, vacaciones, reservas, turismo, viajes, Wonder Travel">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link href="./assets/css/styles.css" rel="stylesheet">
+    <!-- Enterprise Ico -->
+    <link rel="shortcut icon" href="./assets/img/logo/favicon.svg" type="image/x-icon">
+    <title>Wonder Travel - Tu próxima aventura te espera</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">
+                <img src="./assets/img/logo/logo.svg" alt="Wonder Travel Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#atracciones">Atracciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tours">Tours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reserva">Reservar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <img src="./assets/img/hero-banner.jpg" class="hero-background" alt="Montañas de Costa Rica">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <h1>Aventuras en Costa Rica</h1>
+            <h2>Descubre nuestras Majestuosas Montañas</h2>
+            <p class="lead">Explora el Chirripó, Cerro de la Muerte, Monteverde y más destinos increíbles</p>
+            <a href="#reserva" class="btn btn-primary btn-lg">
+                ¡Reserva Ahora! <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+    <!-- Atracciones -->
+    <section id="atracciones" class="atracciones">
+        <div class="container">
+            <h2 class="section-title text-center">Destinos Montañosos</h2>
+            <div class="row">
+                <!-- Atracción 1 -->
+                <div class="col-md-4">
+                    <div class="card atraccion-card">
+                        <img src="./assets/img/attraction-chirripo.jpg" class="card-img-top"
+                            alt="Parque Nacional Chirripó">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-mountain me-2"></i>
+                                Chirripó
+                            </h5>
+                            <p class="card-text">Conquista el punto más alto de Costa Rica con sus impresionantes 3,820
+                                metros sobre el nivel del mar.</p>
+                            <a href="#tours" class="btn btn-primary">Ver Tours Disponibles</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Atracción 2 -->
+                <div class="col-md-4">
+                    <div class="card atraccion-card">
+                        <img src="./assets/img/attraction-monteverde.jpg" class="card-img-top" alt="Monteverde">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <!-- me-2 es lo mismo que usar margin-right: 0.5rem ; -->
+                                <i class="fas fa-cloud me-2"></i>
+                                Monteverde
+                            </h5>
+                            <p class="card-text">Explora el místico bosque nuboso con sus senderos, puentes colgantes y
+                                biodiversidad única en el mundo.</p>
+                            <a href="#tours" class="btn btn-primary">Ver Tours Disponibles</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Atracción 3 -->
+                <div class="col-md-4">
+                    <div class="card atraccion-card">
+                        <img src="./assets/img/attraction-Irazu.jpg" class="card-img-top" alt="Volcán Irazú">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fa-solid fa-volcano me-2"></i>
+                                Volcán Irazú
+                            </h5>
+                            <p class="card-text">Visita el coloso de Costa Rica y maravíllate con su impresionante
+                                cráter y lagos volcánicos.</p>
+                            <a href="#tours" class="btn btn-primary">Ver Tours Disponibles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tours -->
+    <section id="tours" class="tours">
+        <div class="container">
+            <h2 class="section-title text-center">Tours Disponibles</h2>
+            <div class="row">
+                <!-- Tour 1 -->
+                <div class="col-md-4">
+                    <div class="tour-card">
+                        <div class="position-relative">
+                            <img src="./assets/img/tour-1.jpg" alt="Tour Chirripó">
+                            <span class="badge bg-success tour-badge">Disponible</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Aventura Chirripó - 3 días</h5>
+                            <p class="card-text">Conquista la cima más alta de Costa Rica con nuestro tour guiado al
+                                Chirripó.</p>
+                            <ul class="tour-features">
+                                <li><i class="fas fa-check-circle"></i> Permiso de entrada incluido</li>
+                                <li><i class="fas fa-check-circle"></i> Hospedaje en el refugio</li>
+                                <li><i class="fas fa-check-circle"></i> Guía certificado</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="tour-price">Desde $399</span>
+                                <a href="#reserva" class="btn btn-primary">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 2 -->
+                <div class="col-md-4">
+                    <div class="tour-card">
+                        <div class="position-relative">
+                            <img src="./assets/img/tour-2.jpg" alt="Tour Monteverde">
+                            <span class="badge bg-success tour-badge">Disponible</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Monteverde Extremo - 2 días</h5>
+                            <p class="card-text">Vive la adrenalina en los bosques nubosos con canopy y puentes
+                                colgantes.</p>
+                            <ul class="tour-features mb-4">
+                                <li><i class="fas fa-check-circle"></i> Canopy y puentes colgantes</li>
+                                <li><i class="fas fa-check-circle"></i> Caminata nocturna</li>
+                                <li><i class="fas fa-check-circle"></i> Hotel con vista al bosque</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="tour-price">Desde $299</span>
+                                <a href="#reserva" class="btn btn-primary">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 3 -->
+                <div class="col-md-4">
+                    <div class="tour-card">
+                        <div class="position-relative">
+                            <img src="./assets/img/tour-3.jpg" alt="Tour Volcán Irazú">
+                            <span class="badge bg-warning text-dark tour-badge">Últimos lugares</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Aventura Irazú - 1 día</h5>
+                            <p class="card-text">Descubre el volcán más alto de Costa Rica y sus impresionantes cráteres
+                                activos.</p>
+                            <ul class="tour-features mb-4">
+                                <li><i class="fas fa-check-circle"></i> Entrada al Parque Nacional</li>
+                                <li><i class="fas fa-check-circle"></i> Transporte desde San José</li>
+                                <li><i class="fas fa-check-circle"></i> Almuerzo típico incluido</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="tour-price">Desde $89</span>
+                                <a href="#reserva" class="btn btn-primary">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <!-- Formulario de Reserva -->
+    <section id="reserva" class="reserva dark-section">
+        <div class="container">
+            <h2 class="section-title text-center">Reservar Aventura</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form>
+                        <!-- Datos personales -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Nombre completo</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contacto -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Celular</label>
+                                    <input type="tel" class="form-control" placeholder="8888-8888" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Teléfono fijo</label>
+                                    <input type="tel" class="form-control" placeholder="2222-2222">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Dirección -->
+                        <div class="mb-3">
+                            <label class="form-label">Dirección completa</label>
+                            <input type="text" class="form-control" placeholder="Provincia, Cantón, Distrito" required>
+                        </div>
+                        <!-- Número de personas -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Adultos</label>
+                                    <select class="form-select" required>
+                                        <option value="1">1 Adulto</option>
+                                        <option value="2">2 Adultos</option>
+                                        <option value="3">3 Adultos</option>
+                                        <option value="4">4 Adultos</option>
+                                        <option value="5">5 Adultos</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Niños (0-17 años)</label>
+                                    <select class="form-select">
+                                        <option value="0">0 Niños</option>
+                                        <option value="1">1 Niño</option>
+                                        <option value="2">2 Niños</option>
+                                        <option value="3">3 Niños</option>
+                                        <option value="4">4 Niños</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Selección de destino y tour -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Destinos de interés</label>
+                                    <select class="form-select">
+                                        <option>Chirripó</option>
+                                        <option>Monteverde</option>
+                                        <option>Volcán Irazú</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Tour deseado</label>
+                                    <select class="form-select" required>
+                                        <option value="">Seleccione un tour</option>
+                                        <option>Aventura Chirripó - 3 días ($399)</option>
+                                        <option>Monteverde Extremo - 2 días ($299)</option>
+                                        <option>Aventura Irazú - 1 día ($89)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Forma de pago -->
+                        <div class="mb-4">
+                            <label class="form-label">Forma de pago</label>
+                            <select class="form-select" required>
+                                <option value="">Seleccione método de pago</option>
+                                <option>SINPE Móvil</option>
+                                <option>Tarjeta de crédito/débito</option>
+                                <option>Transferencia bancaria</option>
+                                <option>PayPal</option>
+                            </select>
+                        </div>
+                        <!-- Botón de envío -->
+                        <div class="text-center mb-4">
+                            <button type="submit" class="btn btn-primary btn-lg px-5">
+                                Enviar Reserva
+                                <i class="fas fa-paper-plane ms-2"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="title">Wonder Travel</h5>
+                    <p>Su agencia de viajes de confianza, haciendo realidad sus sueños de viaje desde 2024.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="title">Información de Contacto</h5>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="bi bi-geo-alt icon"></i>
+                            Orotina, Alajuela
+                        </li>
+                        <li>
+                            <i class="bi bi-telephone icon"></i>
+                            +506 7777-8888
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope icon"></i>
+                            info@wondertravel.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="title">Síguenos</h5>
+                    <div class="social-links">
+                        <a href="#">
+                            <i class="bi bi-facebook icon"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-instagram icon"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-twitter icon"></i>
+                        </a>
+                    </div>
+                    <p>
+                        <i class="bi bi-clock icon"></i>
+                        Horario: Lun-Vie 9:00-18:00
+                    </p>
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p>&copy; 2024 Wonder Travel. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white text-decoration-none">Términos y Condiciones</a>
+                    <a href="#" class="text-white text-decoration-none">Política de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

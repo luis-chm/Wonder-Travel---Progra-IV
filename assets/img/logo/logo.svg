@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100">
+    <text x="20" y="50" font-size="48" font-family="Script MT Bold, cursive" fill="#1E40AF" style="font-style: italic">Wonder</text>
+    <circle cx="210" cy="15" r="8" fill="#3B82F6"/>
+    <text x="20" y="80" font-size="24" font-family="Arial, sans-serif" fill="#3B82F6" style="letter-spacing: 4">TRAVEL</text>
+</svg>

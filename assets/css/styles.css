@@ -1,0 +1,329 @@
+/* ======================================
+   ESTILOS GENERALES
+   ====================================== 
+   Esta sección define los estilos base que se aplican 
+   a todo el sitio web, incluyendo tipografía y layout básico
+*/
+
+/* Contenedor principal para secciones */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centra todo el contenido vertical y horizontalmente */
+}
+
+/* Estilos de encabezados principales */
+h1 {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300; /* Peso ligero para una apariencia moderna */
+    line-height: 1.2; /* Espaciado entre líneas óptimo para lectura */
+    font-size: 4rem; /* Tamaño grande para títulos principales */
+}
+
+h2 {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 3rem; /* Tamaño menor que h1 para jerarquía visual */
+}
+
+/* Estilos de párrafos y texto destacado */
+p {
+    font-size: 1.2rem; /* Tamaño legible para el contenido principal */
+    margin-bottom: 1.5rem; /* Espacio entre párrafos */
+}
+
+.lead {
+    font-size: 1.5rem; /* Texto destacado más grande */
+    font-weight: 500; /* Peso medio para énfasis */
+}
+
+/* Variantes de sección por tema */
+.dark-section {
+    color: white;
+    background-color: #1b1b32; /* Azul oscuro para secciones con contraste */
+}
+
+.light-section {
+    color: black;
+    background-color: white; /* Secciones claras para contenido principal */
+}
+
+/* Estilos de títulos de sección */
+.section-title {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Arial;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    color: #584e4e; /* Gris oscuro para descripciones secundarias */
+}
+
+/* ======================================
+   BARRA DE NAVEGACIÓN
+   ====================================== 
+   Estilos para la barra de navegación principal
+   que permanece fija en la parte superior
+*/
+
+.navbar {
+    padding: 0.2rem 0;
+    background-color: white;
+}
+
+/* Enlaces de navegación */
+.navbar .nav-link {
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease; /* Transición suave al hacer hover */
+}
+
+.navbar .nav-link:hover {
+    color: #0d6efd; /* Azul al pasar el mouse */
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between; /* Distribuye elementos uniformemente */
+}
+
+/* Logo en la barra de navegación */
+.navbar-brand img {
+    height: 40px; /* Altura fija para mantener consistencia */
+}
+
+/* ======================================
+   SECCIÓN HERO
+   ====================================== 
+   Estilos para la sección principal (banner)
+   con imagen de fondo y overlay
+*/
+
+.hero {
+    position: relative;
+    padding-top: 40px;
+    min-height: 100vh; /* Ocupa toda la altura de la ventana */
+    overflow: hidden;
+}
+
+/* Imagen de fondo del hero */
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen manteniendo proporciones */
+}
+
+/* Overlay oscuro sobre la imagen */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Sombra semi-transparente */
+}
+
+/* Contenido del hero */
+.hero .container {
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté sobre el overlay */
+    color: white;
+    text-align: center;
+}
+
+/* Efectos de texto en el hero */
+.hero h1,
+.hero h2,
+.hero .lead {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejor legibilidad */
+}
+
+/* ======================================
+   SECCIÓN DE ATRACCIONES
+   ====================================== 
+   Estilos para la galería de atracciones
+   con tarjetas interactivas
+*/
+
+.atracciones {
+    padding: 40px 40px 60px 40px;
+    background-color: white;
+}
+
+/* Tarjetas de atracción */
+.atraccion-card {
+    padding: 20px;
+    border: 2px solid #8080804d;
+    margin-bottom: 30px;
+    transition: all 0.2s ease-in; /* Transición suave para efectos hover */
+}
+
+/* Efecto hover en tarjetas */
+.atraccion-card:hover {
+    background-color: #1b1b32;
+    color: white; /* Cambio de color al pasar el mouse */
+}
+
+/* Imágenes de atracciones */
+.atraccion-card img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* ======================================
+   SECCIÓN DE TOURS
+   ====================================== 
+   Estilos para la presentación de tours
+   disponibles con tarjetas detalladas
+*/
+
+.tours {
+    padding: 40px;
+    background-color: white;
+}
+
+/* Tarjetas de tour */
+.tour-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover en tarjetas de tour */
+.tour-card:hover {
+    transform: translateY(0.5rem); /* Elevación al pasar el mouse */
+}
+
+/* Imágenes de tour */
+.tour-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Contenido de tarjeta de tour */
+.tour-card .card-body {
+    padding: 1.25rem;
+}
+
+/* Lista de características del tour */
+.tour-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.tour-features li {
+    margin-bottom: 0.5rem;
+}
+
+/* Iconos en características */
+.tour-features i {
+    color: #28a745; /* Verde para íconos de check */
+    margin-right: 0.5rem;
+}
+
+/* Precio del tour */
+.tour-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: black;
+}
+
+/* Insignia de estado del tour */
+.tour-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* ======================================
+   SECCIÓN DE FORMULARIO
+   ====================================== 
+   Estilos para el formulario de reserva
+*/
+
+.reserva {
+    padding: 40px;
+}
+
+/* Campos del formulario */
+.form-control {
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    margin-bottom: 0.5rem;
+}
+
+/* ======================================
+   FOOTER
+   ====================================== 
+   Estilos para el pie de página
+*/
+
+footer {
+    background-color: #1b1b32;
+    color: white;
+    padding: 40px 0;
+}
+
+/* Enlaces sociales en el footer */
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+/* ======================================
+   MEDIA QUERIES
+   ====================================== 
+   Ajustes responsivos para diferentes
+   tamaños de pantalla
+*/
+
+/* Ajustes para móviles */
+@media screen and (max-width: 767px) {
+    .navbar-brand img {
+        padding-top: 20px;
+    }
+
+    .hero {
+        min-height: 350px;
+        padding-top: 100px; /* Ajuste para móviles */
+    }
+    
+    h1 {
+        font-size: 2.5rem; /* Título más pequeño en móviles */
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    .lead {
+        font-size: 1.2rem;
+    }
+}
+
+/* Ajustes para tablets */
+@media (max-width: 991px) {
+    .navbar-nav {
+        padding-top: 1rem;
+    }
+
+    .nav-item {
+        padding: 0.5rem 0;
+    }
+}
